@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Gallery</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <nav>
+    <ul class="navbar">
+        <li><a href="#">Home</a></li>
+        <li><a href="image.html">Image Gallery</a></li>
+        <li><a href="#" id="loginLink">Login</a></li>
+      </ul>
+    </nav>
+  <div class="container">
+    <h2 class="section-title">Visualise Graphs</h2>
+    <div class="gallery">
+      <div class="card">
+        <img src="./img/back2.jpg" alt="Image 1">
+      </div>
+      <div class="card">
+        <img src="./img/back2.jpg" alt="Image 2">
+      </div>
+      <div class="card">
+        <img src="./img/back2.jpg" alt="Image 3">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+<script>
+  document.getElementById("loginLink").addEventListener("click", function(event) {
+    // Handle login link click event
+    event.preventDefault(); // Prevent default anchor behavior
+    // Add your login functionality here
+  });
+</script>
